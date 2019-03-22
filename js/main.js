@@ -31,9 +31,9 @@ $(function(){
             var figcaption = $(obj).find('figcaption').text();
             var alt = $(obj).find('img').attr('alt');
             if (figcaption == alt) {
-                $(obj).find('img').css({'border':'2px solid green'}); 
+                $(obj).find('img').css({'border':'3px solid green'}); 
             } else {
-                $(obj).find('img').css({'border':'2px solid red'});
+                $(obj).find('img').css({'border':'3px solid red'});
             }
         });        
     });
@@ -43,5 +43,19 @@ $(function(){
         odkazy.append('<li><a href="'+obj.link+'" target="_blank">'
         +obj.name+'</a></li>');
     });
+
+    var i = 0;
+    window.setInterval(function(){
+        $('#zajimavosti div.row img').attr('src','jpg/'+zajimavosti[i].photo);
+        $('#zajimavosti div.row h2').text(zajimavosti[i].title);
+        i<zajimavosti.length-1 ? i++ : i=0; 
+    }, 10000);
+
+    var a = 0;
+    window.setInterval(function(){
+        $('#perlicky div.row h4').text(perlicky[a].title);
+        $('#perlicky div.row p').text(perlicky[a].text);
+        a<perlicky.length-1 ? a++ : a=0; 
+    }, 15000);
 
 })
