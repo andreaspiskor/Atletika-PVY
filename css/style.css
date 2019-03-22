@@ -15,11 +15,12 @@ header {
 }
 
 h2 {
-   font-size: 1.2em;
+   font-size: 2em;
    text-transform: uppercase;
    color: #06a; 
    margin-bottom: 1em;
    font-weight: 500;
+   padding-top: 120px;
 }
 
 h3 {
@@ -48,4 +49,18 @@ h3 {
 #kviz img {
     width: 169px;
     height: 224px;
+}
+
+#zajimavosti img {
+    width: 750px;
+    height: 250px;
+}
+
+#kolo h2{
+    font-size: 1.2em;
+    text-transform: uppercase;
+    color: #06a; 
+    margin-bottom: 1em;
+    font-weight: 500;
+    padding-top: 0px;
 }
