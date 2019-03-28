@@ -23,7 +23,7 @@
     <main>
         <div class="container">
             <div class="row pb-5 pt-5 content">
-                <div class="col-sm-12 col-md-8">
+                <div class="col-sm-13 col-md-7">
                     <h3 class="text-center text-primary">ATLETIKA</h3>
                     <section id="ustava">
                         <div>
@@ -40,7 +40,7 @@
                             <p>Kolébkou organizované atletiky se stalo antické Řecko, kde byla atletika hlavní náplní antických olympijských her. Starověký pentathlon (pětiboj) obsahoval kromě zápasu i běh, skoky, hod diskem a hod oštěpem. 
                             V době feudalismu se pěstovaly běhy, skoky a hody v rámci lidových her a slavností jako nenáročná zábava bez přesných pravidel.</p>              
                             <h4>Nadnárodní soutěže</h4>
-                            <p>
+                                <ul>
                                     <li>Olympijské hry (od roku 1896)</li>
                                     <li>Mistrovství Evropy (od roku 1934)</li>
                                     <li>Halové mistrovství Evropy (od roku 1970)</li>
@@ -56,23 +56,24 @@
                                     <li>Světový pohár v chůzi</li> 
                                     <li>Mistrovství Evropy družstev v atletice</li>
                                     <li>Evropský pohár ve vícebojích</li>
-                            </p>
+                                </ul>
                             <h4>Domácí soutěže</h4>
                             <h5>Dráha</h5>
-
-                            <p>     <li>Mistrovství České republiky mužů a žen</li>
+                                <ul>
+                                    <li>Mistrovství České republiky mužů a žen</li>
                                     <li>Mistrovství ČR juniorů, juniorek, dorostenců a dorostenek</li>
                                     <li>Mistrovství České republiky ve vícebojích</li>
                                     <li>Mistrovství ČR mužů a žen do 22 let</li>
                                     <li>Mistrovství České republiky družstev</li>
                                     <li>Mistrovství ČR žáků a žákyň</li>
-                            </p>
+                                </ul>
                             <h5>Hala</h5>
-                            <p>     <li>Halové mistrovství ČR ve vícebojích</li>
+                                <ul>
+                                    <li>Halové mistrovství ČR ve vícebojích</li>
                                     <li>Halové mistrovství ČR juniorů, juniorek, dorostenců a dorostenek</li>
                                     <li>Halové mistrovství ČR</li>
                                     <li>Halové mistrovství ČR žáků a žákyň</li>
-                            </p>
+                                </ul>
                             <h4>Český Atletický Svaz</h4>
                             <p>Český atletický svaz (ČAS) je samosprávným sdružením atletických oddílů a klubů na území České republiky. 
                                 Eviduje kolem 75 tisíc členů ve více než 315 oddílech a klubech. ČAS je členem Mezinárodní asociace atletických federací 
@@ -101,6 +102,11 @@
                         </div>
                         <p><button class="btn btn-success">Ověřit</button></p>
                     </section>
+                    <div class="text-center">
+                        <em><b>Něco ze života</b></em>
+                        <p>Moje zaměření je skok daleký, který vám ukáži na tomto videu</p>
+                        <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#atleto">Video</button>
+                    </div>
                 </div>
                 <div class="col-sm-12 col-md-4">
                     <div id="kolo">
@@ -117,13 +123,72 @@
                             </div>              
                         </article>
                     </section>
+                    <h3>Tabulka</h3>
+                    <input class="form-control" id="Tabulka" type="text" placeholder="Search..">
+                    <br>
+                    <table class="table table-bordered table-hover table-striped">
+                        <thead>
+                            <tr>
+                                <th>Jméno</th>
+                                <th>Přijmení</th>
+                                <th>Link</th>
+                            </tr>
+                        </thead>
+                        <tbody id="atleti">  
+                            <tr>
+                                <td>Barbora</td>
+                                <td>Špotáková</td>
+                                <td>Specializace</td>
+                            </tr>  
+                            <tr>
+                                <td>Tomáš</td>
+                                <td>Dvořák</td>
+                                <td>desetiboj, sedmiboj</td>
+                            </tr>
+                            <tr>
+                                <td>Emil</td>
+                                <td>Zátopek</td>
+                                <td>5km,10km,půl maraton</td>
+                            </tr>  
+                            <tr>
+                                <td>Zuzana</td>
+                                <td>Hejnová</td>
+                                <td>400m, 400m překážek</td>
+                            </tr>     
+                            <tr>
+                                <td>Jakub</td>
+                                <td>Holuša</td>
+                                <td>800m, 1500m</td>
+                            </tr>  
+                            <tr>
+                                <td>Jan</td>
+                                <td>Železný</td>
+                                <td>hod oštěpem</td>
+                            </tr>    
+                            <tr>
+                                <td>Pavel</td>
+                                <td>Maslák</td>
+                                <td>400m, 200m</td>
+                            </tr>   
+                            <tr>
+                                <td>Roman</td>
+                                <td>Šebrle</td>
+                                <td>desetiboj</td>
+                            </tr>   
+                            <tr>
+                                <td>Denisa</td>
+                                <td>Rosolová</td>
+                                <td>skok daleký, 400m překážek, 400m, sedmiboj </td>
+                            </tr>      
+                        </tbody>
+                    </table>                                     
                     <section id="odkazy">
-                        <h3>Doporučené odkazy</h3>
-                        <div>
+                       <h3>Doporučené odkazy</h3>
+                         <div>
                             <ul>
-                            <li><a href="https://cs.wikipedia.org/wiki/Barbora_Mal%C3%ADkov%C3%A1" target="_blank">Barbora Malíková</a></li>
+                               <li><a href="https://cs.wikipedia.org/wiki/Barbora_Mal%C3%ADkov%C3%A1" target="_blank">Barbora Malíková</a></li>
                             </ul>
-                        </div>
+                         </div>
                     </section>
                 </div>
             </div>
@@ -150,6 +215,25 @@
             </div>
         </div>
     </footer>
+                <!-- The Modal -->
+                 <div class="modal fade" id="atleto">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h4 class="modal-title">Video ke skoku dalekému</h4>
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <video width="640" height="480" controls >
+                                <source src="img/video.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>            
+                      </div>
+                    </div>
+                </div>                               
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
