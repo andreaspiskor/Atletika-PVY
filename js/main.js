@@ -1,7 +1,7 @@
 $(function(){
     $('#ustava p').hide();
     $('#ustava h5').hide();
-    $('#ustava li').hide();
+    $('#ustava ul').hide();
     $('#ustava h4').on('click', function(){
         if ($(this).nextUntil('h4').is(':hidden')) {
             $(this).css({'background-color':'lightblue'});
@@ -57,5 +57,12 @@ $(function(){
         $('#perlicky div.row p').text(perlicky[a].text);
         a<perlicky.length-1 ? a++ : a=0; 
     }, 15000);
+
+    $("#Tabulka").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $("#atleti tr").filter(function() {
+          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+      });
 
 })
