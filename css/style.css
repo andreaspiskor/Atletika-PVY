@@ -64,3 +64,12 @@ h3 {
     font-weight: 500;
     padding-top: 0px;
 }
+
+#text {
+    padding: 20px;
+}
+
+#text img {
+    width: 500px;
+    height: auto;
+}
