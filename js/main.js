@@ -64,14 +64,14 @@ $(function(){
           $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
         });
       });
-    
-        $(function(){
-        $('h2').text('Olympíjské místa');
-        $('.mapa').attr({'style':'fill:rgba(255,0,0,0.1);'});
-    
+
+      $(function(){
+        $('h2').text('Olympijské místa');
+        $('.mapa').attr({'style':'fill:rgba(255,0,0,0.5);stroke:black'});
+
         $('.mapa').on('click',function(){
-            $('.mapa').attr({'style':'fill:rgba(255,0,0,0.1);'});
-            $(this).attr({'style':'fill:rgba(255,255,0,0.5);stroke:black'});
+            $('.mapa').attr({'style':'fill:rgba(255,0,0,0.5);stroke:black'});
+            $(this).attr({'style':'fill:rgba(255,50,255,0.7);stroke:black'});
             $('#text h2').text($(this).data('nazev'));
             $('#text p').text($(this).data('popis'));
             $('#text img').attr('src',$(this).data('img'));
